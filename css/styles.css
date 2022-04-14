@@ -1,0 +1,60 @@
+* {
+  box-sizing: border-box;
+  margin: 0%;
+  padding: 0%;
+}
+
+body {
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+nav img {
+  height: 100px;
+  width: auto;
+}
+
+nav {
+  background-color: black;
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+h1 {
+  color: orange;
+  font-weight: bold;
+  padding-left: 1%;
+}
+
+a {
+  color: orange;
+  text-decoration: none;
+}
+
+/* .nav-links {
+  flex: 1;
+  text-align: right;
+} */
+
+.nav-links ul li {
+  list-style: none;
+  display: inline-block;
+  padding: 8px 60px;
+  position: relative;
+  font-size: 20px;
+}
+
+.nav-links ul li::after {
+  content: "";
+  width: 0%;
+  height: 2px;
+  background: white;
+  display: block;
+  margin: auto;
+  transition: 0.5s;
+}
+
+.nav-links ul li:hover::after {
+  width: 100%;
+}
