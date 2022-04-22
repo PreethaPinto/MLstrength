@@ -25,6 +25,7 @@ body {
   font-family: "Source Sans Pro", sans-serif;
 }
 
+/* Navigation Menu */
 nav {
   background-color: #2d3143;
   height: 80px;
@@ -67,6 +68,7 @@ a {
   width: 100%;
 }
 
+/* Hamburger Menu */
 .hamburger {
   display: none;
   cursor: pointer;
@@ -121,7 +123,8 @@ a {
   }
 }
 
-/* .carousel-container {
+/* Home Page */
+.carousel-container {
   width: 50%;
   margin: auto;
   display: flex;
@@ -138,8 +141,9 @@ a {
   to {
     left: 100%;
   }
-} */
+}
 
+/* Services Page */
 .services {
   display: flex;
   flex-direction: column;
@@ -151,6 +155,7 @@ a {
   width: 100vw;
 }
 
+/* About Page */
 .about {
   display: flex;
   flex-direction: column;
@@ -162,6 +167,7 @@ a {
   width: 100vw;
 }
 
+/* Membership Page (Form) */
 #membership {
   display: flex;
   height: 100%;
@@ -184,7 +190,6 @@ a {
 .form {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  /* grid-gap: 100px; */
   gap: 50px;
 }
 
@@ -193,11 +198,42 @@ a {
   height: 50px;
   font-size: 18px;
 }
-/* @media (max-width: 768px) {
-  label {
+
+#email:valid {
+  background-color: #fff;
+}
+
+#email:invalid {
+  background: #e7eded;
+}
+
+.required::after {
+  content: "*";
+  color: red;
+  font-weight: bold;
+}
+
+input:checked {
+  box-shadow: 0 0 10px #2d3143;
+}
+
+@media (max-width: 768px) {
+  .input-box .details {
     display: none;
   }
-} */
+
+  #birthday {
+    display: none;
+  }
+
+  .form {
+    grid-gap: 10px;
+  }
+
+  .membership-form {
+    background: none;
+  }
+}
 
 /* .form .input-box input:focus { */
 
