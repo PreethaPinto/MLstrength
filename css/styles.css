@@ -193,12 +193,19 @@ a {
   height: 50px;
   font-size: 18px;
 }
+/* @media (max-width: 768px) {
+  label {
+    display: none;
+  }
+} */
 
-.input-box [data-error] #name {
+/* .form .input-box input:focus { */
+
+/* .input-box [data-error] #name {
   border-color: #f1834e;
   color: #f1834e;
   background: #bfc0c0;
-}
+} */
 
 /* .input-box [data-error]::after {
   content: attr(data-error);

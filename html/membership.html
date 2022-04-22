@@ -7,17 +7,28 @@
       <div class="form">
         <div class="input-box" data-error="Please enter your name">
           <label for="name">Full Name</label> <br />
-          <input type="text" id="name" placeholder="Full Name" maxlength="50" />
+          <input
+            type="text"
+            id="name"
+            placeholder="Full Name"
+            maxlength="50"
+            required
+          />
         </div>
 
         <div class="input-box">
           <label for="birthday">Birthday</label> <br />
-          <input type="date" id="birthday" /> <br />
+          <input type="date" id="birthday" required /> <br />
         </div>
 
         <div class="input-box">
           <label for="phone">Phone Number</label> <br />
-          <input type="tel" id="phone" placeholder="Enter your phone number" />
+          <input
+            type="tel"
+            id="phone"
+            placeholder="Enter your phone number"
+            required
+          />
           <br />
         </div>
 
@@ -29,6 +40,7 @@
             name="email"
             placeholder="abc@example.com"
             pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+            required
           />
           <br />
         </div>
@@ -52,7 +64,6 @@
             <option value="silver">Silver Membership</option>
             <option value="gold">Gold Membership</option>
           </select>
-          <br />
         </div>
 
         <div class="newsletter">
