@@ -1,4 +1,4 @@
-setTimeout(() => {
+
     const hamburger = document.querySelector(".hamburger");
     const navMenu = document.querySelector(".nav-menu");
     
@@ -7,12 +7,12 @@ setTimeout(() => {
         navMenu.classList.toggle("active");
     })
     
-    document.querySelectorAll(".nav-linkl").forEach(n => n.
+    document.querySelectorAll(".nav-link").forEach(n => n.
     addEventListener("click", () => {
         hamburger.classList.remove("active");
         navMenu.classList.remove("active");
     }));
-  }, 5000);
+
 
   window.addEventListener('hashchange',replaceContent );
   function replaceContent() {

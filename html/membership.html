@@ -1,17 +1,69 @@
-<div>
-  <h2>About the owner and his philosophy</h2>
-  <p>
-    Hi, my name is Maurice Lidman and my background is in boxing, I competed as
-    an amateur in my early years and now like to share my knowledge and
-    expertise as a coach. It is unknown for me to jump into the ring as your
-    sparring partner.
-  </p>
-  <p>
-    The atmosphere in our boxing classes is fun, exciting and highly energised.
-  </p>
-  <p>
-    Whether it is your first class or you're an intermediate level boxer, you
-    will gain a lot by becoming involved. It is one of the best cardiovascular
-    workouts available.
-  </p>
+<div id="membership">
+  <div class="membership-form">
+    <div class="title">MEMBERSHIP</div>
+    <br />
+
+    <form>
+      <div class="form">
+        <div class="input-box" data-error="Please enter your name">
+          <label for="name">Full Name</label> <br />
+          <input type="text" id="name" placeholder="Full Name" maxlength="50" />
+        </div>
+
+        <div class="input-box">
+          <label for="birthday">Birthday</label> <br />
+          <input type="date" id="birthday" /> <br />
+        </div>
+
+        <div class="input-box">
+          <label for="phone">Phone Number</label> <br />
+          <input type="tel" id="phone" placeholder="Enter your phone number" />
+          <br />
+        </div>
+
+        <div class="input-box">
+          <label for="email">E-mail Address</label> <br />
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="abc@example.com"
+            pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+          />
+          <br />
+        </div>
+
+        <div class="hear-about-us">
+          <p>Where did you hear about us?</p>
+          <input type="radio" id="friend" name="hear-about" />
+          <label for="friend">Friend/Collegue</label> <br />
+          <input type="radio" id="google" name="hear-about" />
+          <label for="google">Google</label><br />
+          <input type="radio" id="social-media" name="hear-about" />
+          <label for="social-media">Social Media</label> <br />
+          <input type="radio" id="word-of-mouth" name="hear-about" />
+          <label for="word-of-mouth">Word of mouth</label> <br />
+        </div>
+
+        <div class="m-plan">
+          <label for="plan">Choose your plan</label><br />
+          <select id="plan" name="plan">
+            <option value="bronze">Bronze Membership</option>
+            <option value="silver">Silver Membership</option>
+            <option value="gold">Gold Membership</option>
+          </select>
+          <br />
+        </div>
+
+        <div class="newsletter">
+          <input type="checkbox" id="subscribe" name="subscribe" />
+          <label>Subscribe to out weekly newsletter</label><br />
+        </div>
+
+        <div class="button">
+          <input type="submit" />
+        </div>
+      </div>
+    </form>
+  </div>
 </div>
