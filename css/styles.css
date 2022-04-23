@@ -25,6 +25,26 @@ body {
   font-family: "Source Sans Pro", sans-serif;
 }
 
+h1 {
+  font-size: 18px;
+}
+
+h2 {
+  font-size: 16px;
+}
+
+h3 {
+  font-size: 14px;
+}
+
+p {
+  font-size: 14px;
+}
+
+li {
+  font-size: 14px;
+}
+
 /* Navigation Menu */
 nav {
   background-color: #2d3143;
@@ -35,7 +55,7 @@ nav {
   padding: 0px 10px;
 }
 
-h1 {
+nav > h1 {
   color: #f1834e;
   font-weight: bold;
   padding-left: 1%;
@@ -51,7 +71,7 @@ a {
   display: inline-block;
   padding: 8px 60px;
   position: relative;
-  font-size: 20px;
+  font-weight: bold;
 }
 
 .navbar ul li::after {
@@ -164,7 +184,9 @@ a {
 }
 
 .about img {
-  width: 100vw;
+  width: 50%;
+  height: 50vh;
+  padding: 20px;
 }
 
 /* Membership Page (Form) */
@@ -250,3 +272,9 @@ input:checked {
   display: block;
   margin: 10px 0;
 } */
+
+.footer {
+  padding: 8px;
+  display: flex;
+  justify-content: center;
+}
