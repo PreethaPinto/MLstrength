@@ -16,36 +16,40 @@
 
   window.addEventListener('hashchange',replaceContent );
   function replaceContent() {
-    switch (window.location.hash) {
+    
+    let current = document.getElementsByClassName('active');
+    
+    if(!!current[0]){
+      current[0].className = current[0]?.className.replace(" active", "");
+    }
+    document.getElementById(window.location.hash.replace('#','') + '-menu')?.classList.add('active');
+    
 
+    switch (window.location.hash) {
       case '':
         $("#content").load("html/home.html");
             document.title = 'ML Strength';
-
+            document.getElementById('home-menu')?.classList.add('active');
       break;      
         
       case '#about':
         $("#content").load("html/about.html");
             document.title = 'About | ML Strength';
-        
         break;
 
         case '#services':
           $("#content").load("html/services.html");
             document.title = 'Services | ML Strength';
-        
         break;
 
         case '#membership':
           $("#content").load("html/membership.html");
             document.title = 'Membership | ML Strength';
-        
         break;
 
         case '#contact':
           $("#content").load("html/contact.html");
             document.title = 'Contact | ML Strength';
-        
         break;
     
       default:

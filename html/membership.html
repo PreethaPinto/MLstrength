@@ -13,12 +13,18 @@
             placeholder="Full Name"
             maxlength="50"
             required
+            autocomplete="nope"
           />
+         
+          <div class="tooltip"> <i class="fa-solid fa-circle-info"></i>
+            <span class="tooltiptext"><img src="../images/Full Name.gif"/></span>
+          </div>
+         
         </div>
 
         <div class="input-box">
           <label for="birthday">Birthday</label> <br />
-          <input type="date" id="birthday" required /> <br />
+          <input type="date" id="birthday"  /> <br />
         </div>
 
         <div class="input-box">
@@ -28,6 +34,7 @@
             id="phone"
             placeholder="Enter your phone number"
             required
+            autocomplete="nope"
           />
           <br />
         </div>
@@ -68,12 +75,12 @@
 
         <div class="newsletter">
           <input type="checkbox" id="subscribe" name="subscribe" />
-          <label>Subscribe to out weekly newsletter</label><br />
+          <label for="subscribe">Subscribe to out weekly newsletter</label><br />
         </div>
-
-        <div class="button">
-          <input type="submit" />
-        </div>
+        <br>
+       
+          <input class="button" type="submit" />
+       
       </div>
     </form>
   </div>
