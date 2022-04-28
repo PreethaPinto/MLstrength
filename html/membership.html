@@ -15,16 +15,11 @@
             required
             autocomplete="nope"
           />
-         
-          <div class="tooltip"> <i class="fa-solid fa-circle-info"></i>
-            <span class="tooltiptext"><img src="../images/Full Name.gif"/></span>
-          </div>
-         
         </div>
 
         <div class="input-box">
           <label for="birthday">Birthday</label> <br />
-          <input type="date" id="birthday"  /> <br />
+          <input type="date" id="birthday" /> <br />
         </div>
 
         <div class="input-box">
@@ -75,12 +70,22 @@
 
         <div class="newsletter">
           <input type="checkbox" id="subscribe" name="subscribe" />
-          <label for="subscribe">Subscribe to out weekly newsletter</label><br />
+          <label for="subscribe">Subscribe to out weekly newsletter</label
+          ><br />
         </div>
-        <br>
-       
-          <input class="button" type="submit" />
-       
+        <br />
+
+        <div class="tooltip">
+          <a>Hover for help</a>
+
+          <span class="tooltiptext">
+            <video width="500" height="500" controls autoplay loop>
+              <source src="./video-files/help.mp4" type="video/mp4" />
+            </video>
+          </span>
+        </div>
+
+        <input class="button" type="submit" />
       </div>
     </form>
   </div>
