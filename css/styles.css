@@ -458,6 +458,10 @@ color: lightgray;
     } */
 
 @media (max-width: 768px) {
+  body {
+    height: auto;
+  }
+
   .input-box .details {
     display: none;
   }
@@ -531,10 +535,11 @@ color: lightgray;
 } */
 
 footer {
-  /* clear: both;
-  position: relative;
-  height: 200px;
-  margin-top: -200px; */
-  display: flex;
-  justify-content: center;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  /* display: flex;
+  justify-content: center; */
 }
