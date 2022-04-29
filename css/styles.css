@@ -1,10 +1,3 @@
-/* colour scheme {
-  color: #2d3143 (dark blue); 
-  color: #bfc0c0 (off-white);
-  color: #ffffff (white);
-  color: #f1834e (orange);
-  color: #4e5d76 (dark grey);
-} */
 * {
   box-sizing: border-box;
   margin: 0%;
@@ -16,11 +9,14 @@ body {
   font-family: "Poppins", sans-serif;
   height: 100%;
   background: linear-gradient(135deg, #4e5d76, #f1834e);
+  background-attachment: fixed;
+  display: flex;
+  flex-direction: column;
 }
 
-/* #content {
-  height: 100%;
-} */
+#content {
+  flex: 1;
+}
 
 body {
   font-family: "Source Sans Pro", sans-serif;
@@ -99,6 +95,15 @@ a {
   background: gray;
 }
 
+@media (max-width: 768px) {
+  .navbar ul li:hover::after {
+    width: 30%;
+  }
+  .navbar .active::after {
+    width: 30%;
+  }
+}
+
 /* Hamburger Menu */
 .hamburger {
   display: none;
@@ -142,6 +147,7 @@ a {
     width: 100%;
     text-align: center;
     transition: 0.3s;
+    z-index: 1;
   }
 
   .nav-item {
@@ -223,12 +229,12 @@ a {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-top: 25px;
+  margin-top: 15px;
 }
 
 .services .services-container {
   background: #fff;
-  max-width: 500px;
+  max-width: 700px;
   width: 100%;
   padding: 20px;
   border-radius: 5px;
@@ -243,30 +249,39 @@ a {
   padding: 5px;
 }
 
-/* .services .classes {
+.services-container h1 {
+  padding: 10px;
+}
+
+.services .classes {
   background-color: #f1834e;
   width: 100%;
   margin-bottom: 15px;
-} */
-/* table {
-  font-family: arial, sans-serif;
-  border-collapse: collapse;
-  width: 80%;
 }
 
-td, th {
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td,
+th {
   border: 1px solid #dddddd;
   text-align: left;
   padding: 8px;
 }
 
 tr:nth-child(even) {
-  background-color: #efefef;
+  background-color: #fff#;
 }
 tr:nth-child(odd) {
   background-color: #efefef;
-  
-} */
+}
+
+tr:hover {
+  background-color: #dddddd;
+}
 
 /* About Page */
 .about {
@@ -274,10 +289,9 @@ tr:nth-child(odd) {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-top: 24px;
-  /* height: 100%; */
-  /* padding-top: 50px; */
+  margin-top: 15px;
 }
+
 .about > .about-container {
   display: flex;
   flex-direction: column;
@@ -302,10 +316,31 @@ tr:nth-child(odd) {
 /* Membership Page (Form) */
 #membership {
   display: flex;
-  /* height: 100%; */
-  padding-top: 50px;
   justify-content: center;
   align-items: center;
+}
+
+.input-box {
+  display: inline-block;
+  position: relative;
+}
+
+.input-box:after {
+  font-family: "FontAwesome";
+  position: absolute;
+  right: 14px;
+  top: 35px;
+  opacity: 0.3;
+}
+
+.name-box::after {
+  content: "\f007";
+}
+.phone-box::after {
+  content: "\f095";
+}
+.email-box::after {
+  content: "\f0e0";
 }
 
 .membership-form {
@@ -315,10 +350,13 @@ tr:nth-child(odd) {
   padding: 50px 30px;
   border-radius: 5px;
   box-shadow: 4px 6px 8px 0 rgba(0, 0, 0, 0.5);
+  margin: 15px;
 }
 
 .title {
   font-weight: bold;
+  text-align: center;
+  padding-bottom: 15px;
 }
 
 .form {
@@ -355,12 +393,20 @@ tr:nth-child(odd) {
   font-weight: bold;
 }
 
-input:not(:placeholder-shown):invalid {
-  border-color: red;
-}
-
 input:checked {
   box-shadow: 0 0 10px #2d3143;
+}
+
+#phone-error {
+  display: none;
+  color: #f1834e;
+  padding-top: 4px;
+}
+
+#email-error {
+  display: none;
+  color: #f1834e;
+  padding-top: 4px;
 }
 
 h1 {
@@ -370,7 +416,7 @@ h1 {
 /* Contact Page */
 .contact {
   display: flex;
-  margin: 25px;
+  margin: 15px;
   justify-content: center;
   align-items: center;
 }
@@ -403,56 +449,12 @@ h1 {
   font-weight: 500;
 }
 
-/* display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  height: 100%;
-
-}
-.contact-container > div{
-  width:300px;
-  height:300px;
-  background-color: white;
-  margin: 30px;
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-  transition: 0.3s;
-}
-.contact-container > div:hover {
-  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-}
-.contact-container > div>  .suburb{
-  font-size: 24px;
-display: flex;
-justify-content: center;
-padding: 16px;
-background-color: #f1834e;
-color:black;
-font-weight: 600;
-}
-
-.contact-container > div>  .details{
-  display: flex;
-  padding: 16px;
-  font-weight: 500;
-  color:gray;
-  }
-
-
-  .contact-container > div>  .details > i{
-color: lightgray;
-    padding-right: 12px;
-   
-    } */
-
 @media (max-width: 768px) {
-  body {
-    height: auto;
-  }
-  .input-box .details {
+  .membership-form .input-box:nth-child(2) {
     display: none;
   }
 
-  #birthday {
+  .input-box > label {
     display: none;
   }
 
@@ -462,26 +464,31 @@ color: lightgray;
 
   .membership-form {
     background: none;
+    box-shadow: none;
+    padding: initial;
+  }
+
+  .membership .membership-form .title {
+    padding-bottom: none;
   }
 
   .contact {
     height: initial;
+    margin: 0%;
   }
 
   .services {
     height: initial;
   }
 
-  .services .services-container {
-    background: none;
-  }
-
   .contact .contact-container {
     background: none;
+    box-shadow: none;
   }
 
   .about > .about-container {
     background: none;
+    box-shadow: none;
     width: initial;
   }
 
@@ -496,25 +503,28 @@ color: lightgray;
     border-radius: 10px;
     margin-bottom: 10px;
   }
-
-  .home > section:nth-child(odd) {
-    flex-direction: column-reverse;
-    width: 97%;
-  }
-
-  .home > section:nth-child(even) {
-    flex-direction: column;
-    width: 97%;
-  }
-
-  .home > section > div > h1 {
-    margin-top: 40px;
-  }
 }
 
 @media (max-width: 1280px) {
   .tooltip {
     display: none;
+  }
+
+  .home > section:nth-child(odd) {
+    flex-direction: column-reverse;
+    width: 97%;
+    align-items: center;
+  }
+
+  .home > section:nth-child(even) {
+    flex-direction: column;
+    width: 97%;
+
+    align-items: center;
+  }
+
+  .home > section > div > h1 {
+    margin-top: 40px;
   }
 }
 
@@ -548,24 +558,11 @@ color: lightgray;
   }
 }
 
-/* For large Desktop screens @media screen and (min-width: 1280px) {
-  .home > section {
-    width: 50%;
-  }
-} */
-
-/* .form .input-box input:focus { */
-
-/* .input-box [data-error] #name {
-  border-color: #f1834e;
-  color: #f1834e;
-  background: #bfc0c0;
-} */
-
-/* .input-box [data-error]::after {
-  content: attr(data-error);
-  font-size: 0.85em;
-  color: #f1834e;
-  display: block;
-  margin: 10px 0;
-}*/
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+footer > a {
+  padding-right: 8px;
+}
