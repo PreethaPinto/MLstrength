@@ -16,14 +16,12 @@ The website is hosted on github pages.
 
 https://preethapinto.github.io/MLstrength/
 
-## License
-
-[MIT](https://choosealicense.com/licenses/mit/)
-
 
 ## Tech Stack
 
 **Client:** HTML, CSS, jQuery, Javascript
 
 **Hosted on:** Github Pages
+## License
 
+[MIT](https://choosealicense.com/licenses/mit/)
